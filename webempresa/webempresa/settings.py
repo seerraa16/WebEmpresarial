@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'core', # Agregamos la app core
 ]
 
 MIDDLEWARE = [
@@ -54,8 +55,8 @@ ROOT_URLCONF = 'webempresa.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
-        'APP_DIRS': True,
+        'DIRS': [BASE_DIR / "templates"],  # Ruta global para plantillas personalizadas
+        'APP_DIRS': True,  # Activa la búsqueda en las carpetas `templates` de cada app
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',

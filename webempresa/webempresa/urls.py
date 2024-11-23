@@ -17,12 +17,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
-<<<<<<< HEAD
-=======
+
 from django.conf.urls.static import static
-urlpatterns = [
- path('', include('core.urls')),
->>>>>>> e0a3622c374085cc25be3de3a66f4046a0ade52b
+
 
 
 urlpatterns = [

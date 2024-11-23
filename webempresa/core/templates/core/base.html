@@ -80,9 +80,10 @@
                 href="{% url 'contact' %}">Contacto</a>
                 </li>
                 <li class="nav-item px-lg-4
-                {% if request.path == '/blog/' %}active{% endif %}">
-                    <a class="nav-link text-uppercase text-expanded"
-                href="{% url 'blog' %}">Blog</a>
+                  {% if request.path|slice:":6" == '/blog/' %}active{% endif %}">
+                  <a class="nav-link text-uppercase text-expanded"
+                    href="{% url 'blog' %}">Blog</a>
+
                 </li>
             </ul>
         </div>

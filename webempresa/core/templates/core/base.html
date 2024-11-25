@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<<<<<<< HEAD
   <head>
-=======
-<head>
->>>>>>> e0a3622c374085cc25be3de3a66f4046a0ade52b
     {% load static %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
 
-<<<<<<< HEAD
 
     <title>Inicio | La Caffettiera</title>
  
-=======
-    <title>Inicio | La Caffettiera</title>
-
->>>>>>> e0a3622c374085cc25be3de3a66f4046a0ade52b
     <!-- Bootstrap -->
     <link href="{% static 'core/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
 
     <!-- Fuentes -->
-<<<<<<< HEAD
     <link href="{% static 'core/vendor/font-awesome/css/fontawesome.min.css' %}" rel="stylesheet" type="text/css">
-=======
-    <link href="{% static 'core/vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
->>>>>>> e0a3622c374085cc25be3de3a66f4046a0ade52b
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
 
@@ -97,26 +84,34 @@
     <!-- Pié de página -->
     <footer class="footer text-faded text-center py-5">
       <div class="container">
+        
         <p class="m-0">
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	        <a href="#" class="link">
-	          <span class="fa-stack fa-lg">
-	            <i class="fa fa-circle fa-stack-2x"></i>
-	            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
-	          </span>
-	        </a>
-	    </p>
+          {% if LINK_TWITTER %}
+          <a href="{{LINK_TWITTER}}" class="link">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          {% endif %}
+          {% if LINK_FACEBOOK %}
+          <a href="{{LINK_FACEBOOK}}" class="link">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          {% endif %}
+          {% if LINK_INSTAGRAM %}
+          <a href="{{LINK_INSTAGRAM}}" class="link">
+            <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+            </span>
+          </a>
+          {% endif %}
+         </p>
+         
         <p class="m-0 mbt">
         	<a href="sample.html" class="link">Política de privacidad</a> ·
         	<a href="sample.html" class="link">Aviso legal</a> ·

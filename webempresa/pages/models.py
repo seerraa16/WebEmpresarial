@@ -14,3 +14,5 @@ class Page(models.Model):
     ordering = ['title']
  def __str__(self):
     return self.title
+ order = models.SmallIntegerField(verbose_name="Orden", default=0)
+ ordering = ['order','title']

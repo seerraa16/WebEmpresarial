@@ -91,9 +91,9 @@
 					</a>
 					{% endif %}
 			</p>
-			{% load pages_extras %}
+			
 				<p class="m-0 mbt">
-					
+					{% load pages_extras %}
 					{% get_page_list as page_list %}
 					{% for page in page_list %}
 					<a href="{% url 'sample' page.id %}" class="link">{{page.title}}</a>

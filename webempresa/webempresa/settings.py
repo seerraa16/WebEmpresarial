@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'social.apps.SocialConfig', 
     'pages.apps.PagesConfig',  
+    
+
  
 ]
 
@@ -76,6 +78,7 @@ TEMPLATES = [
                 "django.contrib.messages.context_processors.messages",
                 'social.processors.ctx_dict',
                 'django.contrib.auth.context_processors.auth',
+                
 
             ],
         },

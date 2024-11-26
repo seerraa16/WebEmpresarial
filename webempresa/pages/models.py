@@ -1,4 +1,6 @@
 from django.db import models
+
+                     
 class Page(models.Model):
  title = models.CharField(max_length=200,
     verbose_name="Título")
@@ -16,3 +18,6 @@ class Page(models.Model):
     return self.title
  order = models.SmallIntegerField(verbose_name="Orden", default=0)
  ordering = ['order','title']
+ 
+
+

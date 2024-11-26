@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['.vercel.app', 'localhost', '127.0.0.1']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
@@ -43,9 +44,7 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',
     'social.apps.SocialConfig', 
     'pages.apps.PagesConfig',  
-    
-
- 
+    'ckeditor', 
 ]
 
 
@@ -151,4 +150,22 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'Custom',
+        'toolbar_Custom': [
+            ['Bold', 'Italic', 'Underline'],
+            ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent',
+            '-',
+            'JustifyLeft', 'JustifyCenter', 'JustifyRight',
+            'JustifyBlock'],
+            ['Link', 'Unlink']
+ ]
+ }
+}
 
+
+
+
+# Configuración de CKEditor
+CKEDITOR_UPLOAD_PATH = "uploads/"

@@ -1,0 +1,7 @@
+{
+    "EMAIL_HOST": "sandbox.smtp.mailtrap.io",  
+    "EMAIL_PORT": 587,  
+    "EMAIL_USE_TLS": true,
+    "EMAIL_HOST_USER": "b1f2521415625b",  
+    "EMAIL_HOST_PASSWORD": "2882b5b70f9cc1"
+  }

@@ -30,6 +30,7 @@ urlpatterns = [
     path("social/", include('social.urls')),
     path("pages/", include('pages.urls')),
     path("ckeditor/", include("ckeditor_uploader.urls")), 
+    path('contact/', include('contact.urls')),
 ]
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 

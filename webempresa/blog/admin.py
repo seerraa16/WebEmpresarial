@@ -18,3 +18,5 @@ class PostAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Post, PostAdmin)
 
+
+
